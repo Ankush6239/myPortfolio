@@ -1,38 +1,390 @@
-.App {
-  text-align: center;
+:root {
+  --default-color: #ffffff;
+  --hover-color: #149ddd;
+  --font-size: 20px;
+  --text-light: #d3d3d3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar {
+  padding: 25px 15px;
+  margin: 0px 0px 0px 0px !important ;
+  min-width: auto;
+  height: 100vh;
+  width: 350px;
+  background-color: black;
+}
+.imgSize {
+  width: 150px;
+  height: 150px;
+  border: 8px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.bgGround {
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  padding: 12px;
+  border-radius: 100%;
+  font-size: 18px;
+  justify-content: center !important;
+
+  height: 60px;
+  width: 60px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+.bgGround:hover {
+  background: var(--hover-color);
+  color: var(--default-color);
+}
+
+.nav-link {
+  font-size: var(--font-size);
+  padding: 15px 10px;
+  justify-content: left;
+  color: var(--text-light);
+}
+
+.nav-link:hover {
+  color: var(--default-color);
+}
+
+.nav-link:hover .navicon {
+  color: var(--hover-color);
+}
+.brand {
+  display: flex;
+  justify-content: center;
+}
+
+.heroImg {
+  object-fit: cover;
+  position: relative;
+}
+
+.heroText {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+
+  transform: translate(-50%, -50%);
+  color: var(--default-color);
+  z-index: 1;
+}
+
+.underline {
+  border-bottom: 2px solid var(--hover-color);
+}
+
+/* about section  css start */
+
+.aboutImg {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.greaterThen {
+  color: var(--hover-color);
+
+  font-weight: bold !important;
+}
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 2px solid var(--hover-color);
+  display: inline-block;
+  padding: 10px;
+}
+
+@media screen and (max-width: 412px) {
+  .heroText {
+    top: 14% !important;
+    left: 45%;
+  }
+  .small-screen-button {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    z-index: 1;
+  }
+}
+
+/* about section css end */
+
+/* skills section css start */
+
+.skills-wrapper {
+  max-width: 900px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.skill {
+  margin-bottom: 25px;
+}
+
+.skill-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.progress {
+  background: var(--default-color);
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--hover-color);
+  border-radius: 5px;
+}
+
+.progress-bar {
+  animation: load 1.5s ease-in-out;
+}
+
+@keyframes load {
+  from {
+    width: 0;
+  }
+}
+
+/* skills section css end here */
+
+/* education section css start here */
+
+.resume-section {
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid #1da1f2;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.timeline-item .dot {
+ position: absolute;
+  left: -38px;
+  top: -1px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 3px solid #1da1f2;
+  border-radius: 50%;
+}
+
+.timeline-item h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.timeline-item .date {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.timeline-item p {
+  margin-bottom: 10px;
+}
+
+.timeline-item ul {
+  padding-left: 20px;
+}
+
+.timeline-item ul li {
+  margin-bottom: 6px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.desc {
+  color: #555;
+}
+/* 
+education section css end here */
+
+/* contacct form css start here */
+
+.contact-section {
+  padding: 60px 0;
+  font-family: Arial, sans-serif;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+
+.contact-info {
+  background: #fff;
+  padding: 30px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.info-box .icon {
+  width: 50px;
+  height: 50px;
+  background: #eaf4fb;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 15px;
+  font-size: 20px;
+  color: #149ddd;
 }
 
-.App-link {
-  color: #61dafb;
+.info-box h4 {
+  margin: 0 0 5px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.map iframe {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  margin-top: 20px;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 30px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  width: 180px;
+  margin: auto;
+  padding: 12px;
+  border: none;
+  background: #149ddd;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0e7abf;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+
+  .contact-form .row {
+    flex-direction: column;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media screen and (min-width: 412px) {
+  .heroText {
+    top: 20% !important;
+    left: 45%;
+  }
+  .small-screen-button {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 540px) {
+  .heroText {
+    top: 30% !important;
+    left: 45%;
+  }
+  .small-screen-button {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 915px) {
+  .heroText {
+    top: 50% !important;
+    left: 45%;
   }
 }
