@@ -1,8 +1,9 @@
 {
-  "homepage":"https://github.com/Ankush6239/myPortfolio.git",
+
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+ "homepage": "https://Ankush6239.github.io/myPortfolio",
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@testing-library/dom": "^10.4.1",
