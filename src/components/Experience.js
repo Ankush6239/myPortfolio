@@ -78,7 +78,7 @@ function Experience() {
                 </div>
                 <div className="row display-flex pt-2">
                   <h4 className="fw-bold">
-                    <i class="bi bi-folder-check"></i>Projects:
+                    <i class="bi bi-folder-check"></i> Projects:
                   </h4>
                   <div className="col-lg-6 col-sm-12 col-md-6 pt-2">
                     <h5 className="fw-bold">

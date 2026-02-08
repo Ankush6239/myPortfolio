@@ -21,7 +21,7 @@ function Contact() {
             </div>
             <div>
               <h4>Address</h4>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>Sujanpur(Pathankot),Punjab, Pin-code:145023</p>
             </div>
           </div>
 
@@ -31,7 +31,11 @@ function Contact() {
             </div>
             <div>
               <h4>Call Us</h4>
-              <p>+1 5589 55488 55</p>
+              <a
+  href="tel:+6239736671"
+  className="text-decoration-none"
+>
+              <p>6239736671</p></a>
             </div>
           </div>
 
@@ -41,7 +45,12 @@ function Contact() {
             </div>
             <div>
               <h4>Email Us</h4>
-              <p>info@example.com</p>
+              <a
+  href="mailto:aryaankush205@gmail.com"
+  className="text-decoration-none"
+>
+              <p>aryaankush205@gmail.com</p>
+              </a>
             </div>
           </div>
 

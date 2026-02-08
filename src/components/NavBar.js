@@ -1,6 +1,7 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import profile from "../assets/img/hero-bg-a.jpeg";
 
 function navBar() {
   return (
@@ -8,7 +9,7 @@ function navBar() {
       <div className="sidebar d-none d-lg-block text-light mt-2">
         <div className="brand ">
           <img
-            src="img/hero-bg-a.jpeg"
+            src={profile}
             alt="Brand Logo"
             className="img-fluid rounded-circle   imgSize"
           />
@@ -27,15 +28,48 @@ function navBar() {
             justifyContent: "center",
           }}
         >
-          <i class="bi bi-instagram  bgGround"></i>
+          <a
+          href="https://www.instagram.com/_ankit_js6239?igsh=dWJ3YWhrZGp6dGxi"
+          target="blank"
+            reel="noopener noreferrer"
+            className="text-decoration-none"
+          >
+ <i class="bi bi-instagram  bgGround"></i>
+          </a>
+         
+           <a 
+           href="https://x.com/Ankush6239"
+           target="blank"
+            reel="noopener noreferrer"
+            className="text-decoration-none"
+           ><i class="bi bi-twitter-x bgGround"></i></a>
+          
 
-          <i class="bi bi-twitter-x bgGround"></i>
+          <a
+            href="https://github.com/Ankush6239"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-decoration-none"
+          >
+            <i className="bi bi-github bgGround"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ankush-arya-b667a629b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="blank"
+            reel="noopener noreferrer"
+            className="text-decoration-none"
+          >
+            {" "}
+            <i class="bi bi-linkedin bgGround"></i>
+          </a>
 
-          <i class="bi bi-github bgGround"></i>
-
-          <i class="bi bi-linkedin bgGround"></i>
-
-          <i className="bi bi-facebook bgGround"></i>
+          <a
+            href="https://www.facebook.com/share/1CDxkporVb/"
+            target="blank"
+            reel="noopener noreferrer"
+            className="text-decoration-none"
+          ><i className="bi bi-facebook bgGround"></i></a>
+          
         </div>
 
         <Nav className="flex-column mt-4">
@@ -59,7 +93,7 @@ function navBar() {
             {" "}
             <i className="bi bi-book"></i> Education
           </Nav.Link>
-         
+
           <Nav.Link href="#contact" className="nav-link">
             {" "}
             <i className="bi bi-envelope navicon"></i> Contact

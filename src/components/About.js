@@ -1,11 +1,12 @@
 import React from "react";
+import profile from "../assets/img/hero-bg-a.jpeg"
 function About() {
   return (
     <section className="about" id="about">
       <div className="container mt-5 mb-5">
         <h2 className="section-title">About Me</h2>
         <p className="about-description pb-1">
-          I’m a detail-oriented Front-End Developer with 1+ year of hands-on
+          I’m a detail-oriented Front-End Developer with 2 year of hands-on
           experience in building responsive websites and web applications.
         </p>
           <p className="about-description pb-1">
@@ -16,9 +17,9 @@ function About() {
           <div className="row d-flex">
             <div className="col-lg-4 justify-content-center d-flex">
               <img
-                src="img/hero-bg-a.jpeg"
+                src={profile}
                 alt="Brand Logo"
-                className="img-fluid aboutImg"
+                className="img-fluid  aboutImg"
               />
             </div>
             <div className="col-lg-8">

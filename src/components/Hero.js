@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
+import profile from "../assets/img/hero-bg.jpeg";
 
 
 
@@ -8,7 +9,7 @@ function Hero() {
     <header className="hero" id="hero">
       <div className="container-fluid p-0 m-0">
         <img
-          src="img/hero-bg.jpeg"
+          src={profile}
           alt="Hero Avatar"
           className="img-fluid w-100 heroImg"
         />

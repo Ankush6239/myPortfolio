@@ -6,12 +6,12 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { Nav } from "react-bootstrap";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
+import profile from "../src/assets/img/hero-bg-a.jpeg";
 function App() {
   return (
     <div className="container-fluid">
@@ -51,7 +51,7 @@ function App() {
                   <div>
                     <div className="brand ">
                       <img
-                        src="img/hero-bg-a.jpeg"
+                        src={profile}
                         alt="Brand Logo"
                         className="img-fluid rounded-circle   imgSize"
                       />
@@ -62,25 +62,58 @@ function App() {
                       </h2>
                     </span>
                   </div>
-                  <div
-                    className="mb-1"
-                    style={{
-                      display: "flex",
-                      gap: "10px",
-                      fontSize: "2rem",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <i class="bi bi-instagram  bgGround"></i>
+                 <div
+          className="mb-1"
+          style={{
+            display: "flex",
+            gap: "10px",
+            fontSize: "2rem",
+            justifyContent: "center",
+          }}
+        >
+          <a
+          href="https://www.instagram.com/_ankit_js6239?igsh=dWJ3YWhrZGp6dGxi"
+          target="blank"
+            reel="noopener noreferrer"
+            className="text-decoration-none"
+          >
+ <i class="bi bi-instagram  bgGround"></i>
+          </a>
+         
+           <a 
+           href="https://x.com/Ankush6239"
+           target="blank"
+            reel="noopener noreferrer"
+            className="text-decoration-none"
+           ><i class="bi bi-twitter-x bgGround"></i></a>
+          
 
-                    <i class="bi bi-twitter-x bgGround"></i>
+          <a
+            href="https://github.com/Ankush6239"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-decoration-none"
+          >
+            <i className="bi bi-github bgGround"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ankush-arya-b667a629b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="blank"
+            reel="noopener noreferrer"
+            className="text-decoration-none"
+          >
+            {" "}
+            <i class="bi bi-linkedin bgGround"></i>
+          </a>
 
-                    <i class="bi bi-github bgGround"></i>
-
-                    <i class="bi bi-linkedin bgGround"></i>
-
-                    <i className="bi bi-facebook bgGround"></i>
-                  </div>
+          <a
+            href="https://www.facebook.com/share/1CDxkporVb/"
+            target="blank"
+            reel="noopener noreferrer"
+            className="text-decoration-none"
+          ><i className="bi bi-facebook bgGround"></i></a>
+          
+        </div>
 
                   <Nav className="flex-column mt-4">
                     <Nav.Link href="#hero" className="nav-link ">
